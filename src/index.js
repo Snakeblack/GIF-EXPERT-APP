@@ -13,9 +13,6 @@ ReactDOM.render(
 );
 
 
-
-
 // GifExpertApp
 // <h2>GifExpertApp</h2>
 // <hr />
-

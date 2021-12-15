@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const AddCategory = ( {setCategories} ) => {
 
-    const [inputValue, setInputValue] = useState('Buscar GIF');
+    const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = ( e ) => {
         // console.log(e.target.value);
@@ -12,8 +12,14 @@ export const AddCategory = ( {setCategories} ) => {
 
     const handleSubmit = ( e ) => {
         e.preventDefault();
+
+        if( inputValue.trim().length > 2 ) {
+            setCategories( cats => [ inputValue, ...cats ] );
+            setInputValue('');
+        }
+
         // console.log( 'Submit hecho' );
-        setCategories( cats => [...cats, inputValue] );
+        
     }
 
     return (
@@ -28,5 +34,5 @@ export const AddCategory = ( {setCategories} ) => {
 }
 
 AddCategory.propTypes = {
-    setCategories: PropTypes.string
+    setCategories: PropTypes.func.isRequired
 }
