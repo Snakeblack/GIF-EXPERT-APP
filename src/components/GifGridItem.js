@@ -1,4 +1,6 @@
 import React from 'react'
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 
 export const GifGridItem = ({ id, title, url }) => {
 
@@ -11,3 +13,13 @@ export const GifGridItem = ({ id, title, url }) => {
         </div>
     )
 }
+
+/*
+    1. Enzyme
+    2. Enzyme to Json
+    3. Deben de mostrar el componente correctamente
+        * shallow
+        * wrapper
+        * wrapper .toMatchSnapshot()
+
+*/
