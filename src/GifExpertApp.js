@@ -6,7 +6,7 @@ const GifExpertApp = () => {
 
     //const categories = ['Android', 'iOS', 'Windows'];
 
-    const [categories, setCategories] = useState(['iPhone']);
+    const [categories, setCategories] = useState(['']);
 
     // const handleAdd = () => {
     //     // setCategories( ['Mac', ...categories]);
