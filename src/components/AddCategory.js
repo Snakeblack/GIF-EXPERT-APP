@@ -12,7 +12,7 @@ export const AddCategory = ( {setCategories} ) => {
     const handleSubmit = ( e ) => {
         e.preventDefault();
 
-        console.log('handleSumbit', inputValue);
+        // console.log('handleSumbit', inputValue);
 
         if( inputValue.trim().length > 2 ) {
             setCategories( cats => [ inputValue, ...cats ] );
@@ -23,8 +23,9 @@ export const AddCategory = ( {setCategories} ) => {
 
     return (
         <form onSubmit={ handleSubmit }>
-            <p> { inputValue }</p>
+            {/* <p> { inputValue }</p> */}
             <input
+                className='animate__animated animate__fadeIn'
                 type="text"
                 value={ inputValue }
                 onChange={ handleInputChange }
