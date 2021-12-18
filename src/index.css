@@ -7,6 +7,11 @@ body {
   background-color: beige;
 }
 
+ol {
+  margin: 0;
+  padding: 0;
+}
+
 hr {
   margin-bottom: 50px;
 }
@@ -43,6 +48,11 @@ input:focus{
 }
 
 @media only screen and (max-width : 900px) {
+  
+  body{
+    padding: 40px;
+  }
+  
   .card-grid{
     grid-template-columns: auto auto;
   }
