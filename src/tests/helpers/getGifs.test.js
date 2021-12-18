@@ -5,11 +5,11 @@ import { getGifs } from "../../helpers/getGifs";
 
 describe('Pruebas en getGifs.js Fetch', () => {
 
-    test('Debe de traer 10 elementos', async() => {
+    test('Debe de traer 50 elementos', async() => {
         
         const gifs = await getGifs('One Punch');
 
-        expect( gifs.length ).toBe( 10 );
+        expect( gifs.length ).toBe( 50 );
 
     });
 

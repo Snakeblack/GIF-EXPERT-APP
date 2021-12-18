@@ -4,14 +4,17 @@ exports[`Pruebas en <GifGridItem.js /> Debe de mostrar el componente correctamen
 <div
   className="card animate__animated animate__fadeIn"
 >
-  <img
-    alt="Un Titulo"
-    src="https://localhost/algo.jpg"
-  />
-  <p>
-     
-    Un Titulo
-     
-  </p>
+  <div
+    className="img"
+  >
+    <img
+      alt="Un Titulo"
+      src="https://localhost/algo.jpg"
+    />
+    <p>
+       
+       
+    </p>
+  </div>
 </div>
 `;
